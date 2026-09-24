@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volailles Gobin — Vente directe à Brie-sous-Barbezieux</title>
+<meta name="description" content="Volailles Gobin — Vente directe à Brie-sous-Barbezieux. Des produits locaux, en vente directe du producteur au consommateur.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+@font-face{font-family:"Inter";src:url("../../assets/fonts/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url("../../assets/fonts/inter-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Inter";src:url("../../assets/fonts/inter-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("../../assets/fonts/montserrat-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Montserrat";src:url("../../assets/fonts/montserrat-latin-800-normal.woff2") format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("../../assets/fonts/playfair-display-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-500-normal.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-600-normal.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"DM Serif Display";src:url("../../assets/fonts/dm-serif-display-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+:root{
+  --primary:#2f5d3a;--primary2:#3f7a4c;--accent:#e0a526;--bg:#f7f6f0;
+  --ink:#16262b;--muted:#5f6f73;--card:#ffffff;
+  --fh:"Montserrat",Georgia,serif;--fb:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:18px;--shadow:0 10px 30px rgba(15,30,45,.08),0 2px 6px rgba(15,30,45,.05);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.ribbon{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:7px 16px;letter-spacing:.2px}
+.ribbon b{color:var(--accent)}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.logo{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;display:grid;place-items:center;font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:.5px;box-shadow:0 6px 14px rgba(0,0,0,.12)}
+.brand-txt{min-width:0}
+.brand-name{font-family:var(--fh);font-weight:800;font-size:17px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:420px}
+.brand-sub{font-size:12.5px;color:var(--muted)}
+.menu{display:flex;gap:28px;font-size:14.5px;font-weight:600;color:var(--muted)}
+.menu a:hover{color:var(--primary)}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 22px;font-weight:600;font-size:15px;transition:transform .15s ease,box-shadow .15s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn .ic{width:18px;height:18px}
+.btn-accent{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.14)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-dark{background:var(--primary);color:#fff}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% -10%,rgba(255,255,255,.14),transparent 60%),linear-gradient(135deg,var(--primary) 0%,var(--primary2) 100%);color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:88px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:999px;font-size:13.5px;font-weight:600;letter-spacing:.2px}
+.eyebrow .ic{width:16px;height:16px;color:var(--accent)}
+.hero h1{font-family:var(--fh);font-weight:800;font-size:clamp(34px,4.6vw,56px);line-height:1.08;margin:20px 0 18px;letter-spacing:-.5px}
+
+.hero p.lead{font-size:18px;opacity:.92;max-width:560px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero-card{position:relative}
+.art{width:100%;height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.25))}
+.chip{position:absolute;background:#fff;color:var(--ink);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:10px;align-items:center;font-size:14px;font-weight:600}
+.chip .ic{color:var(--accent)}
+.chip small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.chip.c1{left:-18px;bottom:26px}
+.chip.c2{right:-10px;top:18px}
+.features{margin-top:-44px;position:relative;z-index:2}
+.features .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat{background:var(--card);border-radius:var(--r);padding:22px 22px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:flex-start}
+.feat .ico{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--accent) 14%,#fff);color:var(--accent);display:grid;place-items:center}
+.feat h3{font-size:16px;font-weight:700;margin-bottom:2px}
+.feat p{font-size:14px;color:var(--muted)}
+section{padding:84px 0}
+.sec-head{max-width:640px;margin-bottom:38px}
+.kicker{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:1.4px;text-transform:uppercase}
+.sec-head h2{font-family:var(--fh);font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin-top:8px}
+.sec-head p{color:var(--muted);margin-top:10px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border-radius:var(--r);padding:26px;border:1px solid rgba(0,0,0,.05);box-shadow:0 1px 2px rgba(0,0,0,.03);transition:box-shadow .2s ease,transform .2s ease}
+.svc:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.svc .ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;display:grid;place-items:center;margin-bottom:16px}
+.svc h3{font-size:17.5px;margin-bottom:6px}
+.svc p{font-size:14.5px;color:var(--muted)}
+.about{background:#fff}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-txt p{color:var(--muted);margin-top:14px;font-size:16px}
+.checks{margin-top:22px;display:grid;gap:10px}
+.checks li{list-style:none;display:flex;gap:10px;align-items:center;font-weight:500}
+.checks .ic{color:var(--accent);flex:0 0 auto}
+.mapcard{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:var(--bg);position:relative}
+.mapcard svg{display:block;width:100%;height:auto}
+.mapcard .pinlabel{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);background:#fff;padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);font-weight:700;font-size:14px;white-space:nowrap}
+.mapcard .pinlabel small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.band{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border-radius:28px;padding:44px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.band h2{font-family:var(--fh);font-size:30px;line-height:1.2}
+.band p{opacity:.85;margin-top:6px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ccard{background:var(--card);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.ccard .ico{width:44px;height:44px;border-radius:12px;background:color-mix(in srgb,var(--primary) 10%,#fff);color:var(--primary);display:grid;place-items:center;margin-bottom:12px}
+.ccard h3{font-size:15px;color:var(--muted);font-weight:600}
+.ccard .v{font-size:17px;font-weight:700;margin-top:4px;word-break:break-word}
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:34px 0;font-size:13.5px;margin-top:84px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}
+.note{font-size:12.5px;color:var(--muted);margin-top:18px}
+.float-call{display:none}
+@media (max-width:900px){
+  .menu{display:none}
+  .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:84px;gap:28px}
+  .hero-card{max-width:440px}
+  .features .grid,.services,.contact-grid{grid-template-columns:1fr}
+  .about .wrap{grid-template-columns:1fr;gap:32px}
+  section{padding:60px 0}
+  .band{padding:32px 26px}
+  .brand-name{max-width:52vw}
+  .nav .btn span{display:none}
+  .nav .btn{padding:11px}
+  .chip.c1{left:6px}.chip.c2{right:6px}
+  .float-call{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:20;justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Maquette de démonstration préparée pour <b>Volailles Gobin</b> — textes et visuels à valider ensemble</div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="logo">VG</span>
+      <span class="brand-txt"><span class="brand-name">Volailles Gobin</span><br><span class="brand-sub">Vente directe · Brie-sous-Barbezieux</span></span>
+    </a>
+    <nav class="menu"><a href="#s1">Nos produits</a><a href="#s2">La ferme</a><a href="#s3">Contact</a></nav>
+    <a class="btn btn-dark" href="tel:+33545782004"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>05 45 78 20 04</span></a>
+  </div>
+</header>
+<main id="top">
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Vente directe · Brie-sous-Barbezieux</span>
+      <h1>Produits de la ferme à Brie-sous-Barbezieux</h1>
+      <p class="lead">Des produits locaux, en vente directe du producteur au consommateur.</p>
+      <div class="cta">
+        <a class="btn btn-accent" href="mailto:volailles.gobin@orange.fr?subject=Demande%20d%27information%20%E2%80%94%20Volailles%20Gobin"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Nous contacter</a>
+        <a class="btn btn-ghost" href="tel:+33545782004"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 05 45 78 20 04</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <svg class="art" viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration">
+<defs><linearGradient id="bl91b235" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".24"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient></defs>
+<rect x="18" y="18" width="484" height="404" rx="38" fill="url(#bl91b235)" stroke="rgba(255,255,255,.28)"/>
+<circle cx="260" cy="220" r="120" fill="#fff"/>
+<circle cx="260" cy="220" r="150" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-dasharray="6 10"/>
+<circle cx="398" cy="96" r="30" fill="#e0a526"/><circle cx="116" cy="340" r="22" fill="#e0a526" opacity=".85"/>
+<rect x="80" y="84" width="70" height="70" rx="20" fill="#fff" opacity=".22"/><rect x="372" y="312" width="80" height="54" rx="18" fill="#fff" opacity=".18"/>
+<g transform="translate(200 160) scale(5)" fill="none" stroke="#2f5d3a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></g>
+</svg>
+      <div class="chip c1"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div>Brie-sous-Barbezieux<small>Charente (16)</small></div></div>
+      <div class="chip c2"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg><div>Vente directe<small>Contact direct</small></div></div>
+    </div>
+  </div>
+</section>
+<div class="features"><div class="wrap grid">
+  <div class="feat"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><div><h3>Produits locaux</h3><p>En direct de la ferme.</p></div></div><div class="feat"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg></span><div><h3>Vente directe</h3><p>À la ferme et sur les marchés.</p></div></div><div class="feat"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><div><h3>À Brie-sous-Barbezieux</h3><p>Charente (16).</p></div></div>
+</div></div>
+<section id="s1"><div class="wrap">
+  <div class="sec-head"><div class="kicker">Nos produits</div><h2>Nos produits</h2><p>Les principaux services, à ajuster selon votre activité.</p></div>
+  <div class="services">
+    <div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><h3>Nos produits</h3><p>Des produits de saison.</p></div><div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></span><h3>Vente directe</h3><p>À la ferme et sur les marchés.</p></div><div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span><h3>Commandes</h3><p>Informations sur les commandes sur demande.</p></div><div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><h3>Savoir-faire</h3><p>Une production locale.</p></div><div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg></span><h3>Où nous trouver</h3><p>Lieux et horaires de vente.</p></div><div class="svc"><span class="ico"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><h3>Horaires</h3><p>Horaires à compléter.</p></div>
+  </div>
+</div></section>
+<section class="about" id="s2"><div class="wrap">
+  <div class="about-txt">
+    <div class="kicker">La ferme</div>
+    <h2 style="font-family:var(--fh);font-size:clamp(28px,3.2vw,38px);line-height:1.15;margin-top:8px">À propos</h2>
+    <p>Volailles Gobin vous accueille à Brie-sous-Barbezieux et vous propose un service de proximité, avec un contact direct et personnalisé.</p>
+    <ul class="checks"><li><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Un contact direct</li><li><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Renseignements sur demande</li><li><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> À Brie-sous-Barbezieux et alentour</li></ul>
+    
+  </div>
+  <div class="mapcard">
+    <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Plan schématique">
+<rect width="560" height="420" fill="#eef1ee"/>
+<path d="M0 300 C 120 260, 200 340, 320 300 S 520 240, 560 270 V 330 C 500 300, 420 360, 320 350 S 120 320, 0 360Z" fill="#cfe3ef"/>
+<g fill="#dfe9d8"><rect x="40" y="40" width="120" height="90" rx="14"/><rect x="380" y="60" width="140" height="80" rx="14"/><rect x="420" y="360" width="110" height="50" rx="12"/></g>
+<g stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none"><path d="M0 190 H560"/><path d="M280 0 V420"/><path d="M60 420 L200 190 L420 0"/></g>
+<g stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".9"><path d="M0 110 H560"/><path d="M140 0 V420"/><path d="M430 0 V420"/><path d="M0 250 H560"/></g>
+<circle cx="280" cy="190" r="60" fill="#e0a526" opacity=".16"/><circle cx="280" cy="190" r="34" fill="#e0a526" opacity=".22"/>
+<g transform="translate(262 150)"><path d="M18 0C8 0 0 8 0 18c0 13 18 30 18 30s18-17 18-30C36 8 28 0 18 0Z" fill="#2f5d3a"/><circle cx="18" cy="18" r="7" fill="#fff"/></g>
+</svg>
+    <div class="pinlabel">Brie-sous-Barbezieux<small>et alentour</small></div>
+  </div>
+</div></section>
+<section style="padding-bottom:0"><div class="wrap">
+  <div class="band">
+    <div><h2>Une question, une demande ?</h2><p>Contactez-nous directement, nous vous répondons rapidement.</p></div>
+    <div class="cta" style="margin-top:0">
+      <a class="btn btn-accent" href="tel:+33545782004"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 05 45 78 20 04</a>
+      <a class="btn btn-ghost" href="mailto:volailles.gobin@orange.fr?subject=Demande%20d%27information%20%E2%80%94%20Volailles%20Gobin"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> Écrire</a>
+    </div>
+  </div>
+</div></section>
+<section id="s3"><div class="wrap">
+  <div class="sec-head"><div class="kicker">Contact</div><h2>Contact</h2><p>Pour tout renseignement, contactez-nous directement.</p></div>
+  <div class="contact-grid">
+    <a class="ccard" href="tel:+33545782004"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><h3>Téléphone</h3><div class="v">05 45 78 20 04</div></a>
+    <a class="ccard" href="mailto:volailles.gobin@orange.fr"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span><h3>E-mail</h3><div class="v">volailles.gobin@orange.fr</div></a>
+    <div class="ccard"><span class="ico"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span><h3>Secteur</h3><div class="v">Brie-sous-Barbezieux (16300)</div></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>© 2026 Volailles Gobin — Brie-sous-Barbezieux</div>
+  <div>Mentions légales · Politique de confidentialité <span style="opacity:.6">(à compléter)</span></div>
+</div></footer>
+<a class="btn btn-accent float-call" href="tel:+33545782004"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler 05 45 78 20 04</a>
+</body>
+</html>
